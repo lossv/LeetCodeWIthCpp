@@ -20,7 +20,7 @@ public:
             return max(nums[0], nums[1]);
         if(length == 3)
             return max(nums[0] + nums[2], nums[1]);
-        nums[2] = nums[0] + nums[2];
+        nums[2] += nums[0];
         for(int i = 3; i < length; ++i)
             nums[i] = max(nums[i] + nums[i - 2], nums[i] + nums[i - 3]);
 
