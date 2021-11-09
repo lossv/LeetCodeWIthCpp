@@ -15,10 +15,10 @@ public:
         if(ops.size() == 0)
             return m * n;
         int rangeA = m, rangeB = n;
-        for (int i = 0; i < ops.size(); ++i)
+        for (auto & op : ops)
         {
-            rangeA = min(ops[i][0], rangeA);
-            rangeB = min(ops[i][1], rangeB);
+            rangeA = min(op[0], rangeA);
+            rangeB = min(op[1], rangeB);
         }
         return rangeA * rangeB;
     }
