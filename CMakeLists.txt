@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.9)
 project(LeetCodeWIthCpp)
 
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 set(CMAKE_CXX_STANDARD 20)
 add_executable(LeetCodeWIthCpp main.cpp)
 add_executable(lengthOfLongestSubstring 3.lengthOfLongestSubstring.cpp)
@@ -33,3 +33,4 @@ add_executable(originalDigits 423.originalDigits.cpp)
 add_executable(searchBST 700.searchBST.cpp)
 add_executable(removePalindromeSub 1332.removePalindromeSub.cpp)
 add_executable(minJumps 1345.minJumps.cpp)
+add_executable(StockPrice 2034.StockPrice.cpp)
