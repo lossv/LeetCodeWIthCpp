@@ -19,9 +19,8 @@ public:
 
 int main()
 {
-    int n = 3;
-    int k = 0;
-    Solution solution;
-    cout << solution.kInversePairs(n, k);
+    unsigned int n = 8;
+    unsigned int k = 3;
+    cout << k - n << endl;
     return 0;
 }

@@ -22,19 +22,23 @@ int main()
        s[i].value = i * i;
     }
     s[3].key = 2;
-//    auto fun = [](S stTmp) -> int{
-//        return stTmp.key;
-//    };
-    ManageArray<S, int> manageArray(iCnt, s, GetKey);
+    auto fun = [](S stTmp) -> int{
+        return stTmp.key;
+    };
 
-    manageArray.DeleteKey(7);
-    manageArray.DeleteKey(9);
+    BZERO(s);
+    printf("");
 
-    manageArray.DeleteAllKey(2);
-
-    for(int i = 0; i < iCnt; ++i)
-    {
-        cout << s[i].key << " " << s[i].value << endl;
-    }
+//    ManageArray<S, int> manageArray(iCnt, s, GetKey);
+//
+//    manageArray.DeleteKey(7);
+//    manageArray.DeleteKey(9);
+//
+//    manageArray.DeleteAllKey(2);
+//
+//    for(int i = 0; i < iCnt; ++i)
+//    {
+//        cout << s[i].key << " " << s[i].value << endl;
+//    }
     return 0;
 }

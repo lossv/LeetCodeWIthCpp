@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 2.9)
+cmake_minimum_required(VERSION 2.8.12.2)
 project(LeetCodeWIthCpp)
 
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 add_executable(LeetCodeWIthCpp main.cpp)
 add_executable(lengthOfLongestSubstring 3.lengthOfLongestSubstring.cpp)
 add_executable(twoSum 1.twoSum.cpp)
@@ -32,3 +32,4 @@ add_executable(findMinStep 488.findMinStep.cpp)
 add_executable(kInversePairs 629.kInversePairs.cpp)
 add_executable(originalDigits 423.originalDigits.cpp)
 add_executable(searchBST 700.searchBST.cpp)
+add_executable(validTicTacToe 794.validTicTacToe.cpp)
