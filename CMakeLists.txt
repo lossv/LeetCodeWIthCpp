@@ -5,6 +5,8 @@ project(LeetCodeWIthCpp)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CMAKE_CXX_STANDARD 20)
+
+add_subdirectory(Thread)
 add_executable(LeetCodeWIthCpp main.cpp)
 add_executable(lengthOfLongestSubstring 3.lengthOfLongestSubstring.cpp)
 add_executable(twoSum 1.twoSum.cpp)
