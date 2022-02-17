@@ -8,36 +8,44 @@
 
 using namespace std;
 
-typedef pair<int,int> pii;
+typedef pair<int, int> pii;
 
-class StockPrice {
+class StockPrice
+{
     map<int, int> mp;
     multiset<int> s;
 public:
-    StockPrice() {
+    StockPrice()
+    {
 
     }
 
-    void update(int timestamp, int price) {
+    void update(int timestamp, int price)
+    {
         auto it = mp.find(timestamp);
-        if (it != mp.end()) {
+        if (it != mp.end())
+        {
             s.erase(s.find(it->second));
             it->second = price;
-        } else {
+        } else
+        {
             mp.emplace(timestamp, price);
         }
         s.emplace(price);
     }
 
-    int current() {
+    int current()
+    {
         return mp.rbegin()->second;
     }
 
-    int maximum() {
+    int maximum()
+    {
         return *s.rbegin();
     }
 
-    int minimum() {
+    int minimum()
+    {
         return *s.begin();
     }
 };
