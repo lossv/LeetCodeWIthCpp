@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.9)
+cmake_minimum_required(VERSION 2.8)
 project(LeetCodeWIthCpp)
 
 
@@ -54,3 +54,4 @@ add_executable(subArrayRanges 2104.subArrayRanges.cpp)
 add_executable(platesBetweenCandles 2055.platesBetweenCandles.cpp)
 add_executable(findLUSlength 521.findLUSlength.cpp)
 add_executable(calPoints 682.calPoints.cpp)
+add_executable(hasAlternatingBits 693.hasAlternatingBits.cpp)
