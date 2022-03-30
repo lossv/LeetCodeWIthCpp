@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ public:
     int minimumDifference(vector<int> &nums, int k)
     {
         sort(nums.begin(), nums.end());
-        int ans = INT_MAX;
+        int ans = INT32_MAX;
         for (int i = k - 1; i < nums.size(); ++i)
         {
             ans = min(ans, nums[i] - nums[i - k + 1]);

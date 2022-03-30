@@ -82,3 +82,8 @@ public:
         m3.unlock();
     }
 };
+
+int main()
+{
+    return 0;
+}

@@ -1,10 +1,8 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_COMPILER /usr/local/gcc-11.2/bin/g++)
+set(CMAKE_C_COMPILER /usr/local/gcc-11.2/bin/gcc)
 project(LeetCodeWIthCpp)
 
-
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(Thread)
 add_executable(LeetCodeWIthCpp main.cpp)
@@ -56,3 +54,4 @@ add_executable(findLUSlength 521.findLUSlength.cpp)
 add_executable(calPoints 682.calPoints.cpp)
 add_executable(hasAlternatingBits 693.hasAlternatingBits.cpp)
 add_executable(maxConsecutiveAnswers 2024.maxConsecutiveAnswers.cpp)
+add_executable(busiestServers 1606.busiestServers.cpp)
