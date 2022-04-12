@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.0)
-set(CMAKE_CXX_COMPILER /usr/local/gcc-11.2/bin/g++)
-set(CMAKE_C_COMPILER /usr/local/gcc-11.2/bin/gcc)
 project(LeetCodeWIthCpp)
 
 
@@ -56,3 +54,5 @@ add_executable(hasAlternatingBits 693.hasAlternatingBits.cpp)
 add_executable(maxConsecutiveAnswers 2024.maxConsecutiveAnswers.cpp)
 add_executable(busiestServers 1606.busiestServers.cpp)
 add_executable(selfDividingNumbers 728.selfDividingNumbers.cpp)
+add_executable(canReorderDoubled 954.canReorderDoubled.cpp)
+add_executable(numberOfLines 806.numberOfLines.cpp)

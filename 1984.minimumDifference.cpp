@@ -25,5 +25,8 @@ public:
 
 int main()
 {
+    int num = 6;
+    num &= (~(1 << 2));
+    cout << num << endl;
     return 0;
 }
