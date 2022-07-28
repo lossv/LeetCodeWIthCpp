@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 2.8)
 project(LeetCodeWIthCpp)
 
 
@@ -59,3 +59,6 @@ add_executable(numberOfLines 806.numberOfLines.cpp)
 add_executable(sumRootToLeaf 1022.sumRootToLeaf.cpp)
 add_executable(findSubstring 30.findSubstring.cpp)
 add_executable(encode-and-decode-tinyurl 536.encode-and-decode-tinyurl.cpp)
+add_executable(MyCalendarTwo 731.MyCalendarTwo.cpp)
+add_executable(shiftGrid 1260.shiftGrid.cpp)
+add_executable(fractionAddition 592.fractionAddition.cpp)
