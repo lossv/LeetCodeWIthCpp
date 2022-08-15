@@ -5,8 +5,11 @@
 #include <vector>
 #include <cstdlib>
 #include <cstdint>
+#include <string>
+#include <iostream>
 
 using std::vector;
+using std::string;
 
 class Solution
 {
@@ -24,8 +27,22 @@ public:
     }
 };
 
+int globalvar = 20;
+
+int &foo()
+{
+    return globalvar;
+}
+
 int main()
 {
+//    string a = "aaaa";
+//
+//    auto c = static_cast<string&&>(a);
+//    auto b = std::move(a);
+
+    foo() = 10;
+    std::cout << globalvar << std::endl;
 
     return 0;
 }
