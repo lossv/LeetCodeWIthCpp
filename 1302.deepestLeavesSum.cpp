@@ -26,27 +26,24 @@ public:
         maxFloor = 0;
         maxSum = 0;
         CheckNext(root, 1);
-
         return maxSum;
     }
 
     void CheckNext(TreeNode *node, int curFloor)
     {
-        if(!node) return;
-        if(curFloor > maxFloor)
+        if (!node) return;
+        if (curFloor > maxFloor)
         {
             maxSum = node->val;
             maxFloor = curFloor;
         }
-        else if(curFloor == maxFloor)
+        else if (curFloor == maxFloor)
         {
             maxSum += node->val;
         }
 
         CheckNext(node->left, curFloor + 1);
         CheckNext(node->right, curFloor + 1);
-
-
     }
 
 private:
