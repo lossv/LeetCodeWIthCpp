@@ -20,11 +20,11 @@ public:
         {
             if (item[0] == '+')
             {
-                nums.emplace_back(nums[nums.size() - 1] + nums[nums.size() - 2]);
+                nums.__emplace_back(nums[nums.size() - 1] + nums[nums.size() - 2]);
             }
             else if (item[0] == 'D')
             {
-                nums.emplace_back(nums[nums.size() - 1] * 2);
+                nums.__emplace_back(nums[nums.size() - 1] * 2);
             }
             else if (item[0] == 'C')
             {
@@ -32,15 +32,22 @@ public:
             }
             else
             {
-                nums.emplace_back(stoi(item));
+                nums.__emplace_back(stoi(item));
             }
         }
         int res = 0;
-        std::for_each(nums.begin(), nums.end(), [&](int n)
-        {
-            res += n;
-        });
-        return res;
+//        std::for_each(nums.begin(), nums.end(), [&](int n)
+//        {
+//            res += n;
+//        });
+        auto fun = [&](){
+            for(auto &item : nums)
+                res += item;
+            return res;
+        };
+        return fun();
+
+
     }
 };
 

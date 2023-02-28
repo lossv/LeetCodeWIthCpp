@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(LeetCodeWIthCpp)
-
+set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(Thread)
 add_executable(LeetCodeWIthCpp main.cpp)
@@ -76,3 +76,7 @@ add_executable(areAlmostEqual 1790.areAlmostEqual.cpp)
 add_executable(maxChunksToSorted 769.maxChunksToSorted.cpp)
 add_executable(totalFruit 904.totalFruit.cpp)
 add_executable(countEven 2180.countEven.cpp)
+add_executable(countPrimeSetBits 762.countPrimeSetBits.cpp)
+add_executable(findClosest findClosest.cpp)
+add_executable(maxScore 1422.maxScore.cpp)
+add_executable(maxScoreWords 1255.maxScoreWords.cpp)
