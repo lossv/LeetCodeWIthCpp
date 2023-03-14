@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 2.8)
 project(LeetCodeWIthCpp)
 set(CMAKE_CXX_STANDARD 20)
 
+include_directories(comm)
+
+add_subdirectory(offer)
+
+
 add_subdirectory(Thread)
 add_executable(LeetCodeWIthCpp main.cpp)
 add_executable(lengthOfLongestSubstring 3.lengthOfLongestSubstring.cpp)
@@ -80,3 +85,6 @@ add_executable(countPrimeSetBits 762.countPrimeSetBits.cpp)
 add_executable(findClosest findClosest.cpp)
 add_executable(maxScore 1422.maxScore.cpp)
 add_executable(maxScoreWords 1255.maxScoreWords.cpp)
+add_executable(largestLocal 2373.largestLocal.cpp)
+add_executable(getFolderNames 1487.getFolderNames.cpp)
+add_executable(minNumberOfHours 2383.minNumberOfHours.cpp)
