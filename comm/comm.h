@@ -11,5 +11,6 @@
 #include <vector>
 #include <string>
 #include <stack>
+#include "LCBinaryTree.h"
 
 #endif //LEETCODEWITHCPP_COMM_H
