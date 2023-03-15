@@ -5,6 +5,8 @@
 #ifndef LEETCODEWITHCPP_COMM_H
 #define LEETCODEWITHCPP_COMM_H
 
+#pragma once
+
 #include <iostream>
 #include <unordered_map>
 #include <unordered_set>
@@ -12,5 +14,6 @@
 #include <string>
 #include <stack>
 #include "LCBinaryTree.h"
+#include "PrettyPrint.h"
 
 #endif //LEETCODEWITHCPP_COMM_H
