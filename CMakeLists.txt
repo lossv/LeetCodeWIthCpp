@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(comm)
 
 add_subdirectory(offer)
+add_subdirectory(algo)
 
 aux_source_directory(${PROJECT_SOURCE_DIR} SRC_LIST)
 
