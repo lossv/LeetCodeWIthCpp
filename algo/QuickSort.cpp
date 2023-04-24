@@ -28,10 +28,36 @@ void QuickSort(vector<int> &nums, int left, int right)
     }
 }
 
+int FindKthNumber(vector<int> &nums, int k)
+{
+    int left = 0, right = nums.size() - 1;
+
+    while (left < right)
+    {
+        int pos = Partition(nums, left, right);
+        if(pos == k - 1)
+        {
+            return nums[pos];
+        }
+        else if(pos > k - 1)
+        {
+            right = pos;
+        }
+        else
+        {
+            left++;
+        }
+    }
+
+    return -1;
+}
+
 int main()
 {
     vector<int> nums{5, 10, 1, 3, 8, 9, 2};
-    QuickSort(nums, 0, nums.size() - 1);
-    PrintVector(nums);
+//    QuickSort(nums, 0, nums.size() - 1);
+//    PrintVector(nums);
+
+    cout << FindKthNumber(nums, 2);
     return 0;
 }
