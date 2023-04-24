@@ -12,9 +12,9 @@ public:
         {
             while (!isalnum(s[i]) && i <= j) ++i;
             while (!isalnum(s[j]) && i <= j) --j;
-            if(i <= j)
+            if (i <= j)
             {
-                if(tolower(s[i++]) != tolower(s[j--]))
+                if (tolower(s[i++]) != tolower(s[j--]))
                 {
                     return false;
                 }
