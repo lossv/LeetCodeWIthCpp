@@ -12,6 +12,7 @@
 #include <string>
 #include <stack>
 #include <numeric>
+#include <map>
 #include "LCBinaryTree.h"
 #include "PrettyPrint.h"
 
