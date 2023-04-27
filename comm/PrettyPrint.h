@@ -5,7 +5,6 @@
 #ifndef LEETCODEWITHCPP_PRETTYPRINT_H
 #define LEETCODEWITHCPP_PRETTYPRINT_H
 
-#pragma once
 #include "comm.h"
 
 using std::vector;
