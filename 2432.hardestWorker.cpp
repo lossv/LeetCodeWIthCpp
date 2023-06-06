@@ -8,8 +8,6 @@ class Solution
 public:
     int hardestWorker(int n, vector<vector<int>> &logs)
     {
-        map<int, int> mapID;
-        set<int> setID;
         int startTime = 0;
         int result = INT32_MAX;
         int iTmpTime = 0;

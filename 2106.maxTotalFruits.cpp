@@ -8,6 +8,8 @@ public:
 
     int maxTotalFruits(vector<vector<int>> &fruits, int startPos, int k)
     {
+        unordered_map<int, int> map_m;
+        map_m[1] = 1;
         int n = fruits.size(), ans = 0, sum = 0;
         for (int l = 0, r = 0; r < n; r++)
         {

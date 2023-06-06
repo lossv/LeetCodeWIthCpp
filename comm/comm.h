@@ -14,6 +14,7 @@
 #include <numeric>
 #include <map>
 #include <set>
+#include <functional>
 
 #include "LCBinaryTree.h"
 #include "PrettyPrint.h"
